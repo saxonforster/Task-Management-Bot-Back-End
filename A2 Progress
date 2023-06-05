@@ -1,0 +1,265 @@
+Discord group management bot
+
+
+
+
+
+Group: Bot8
+By: Aidan Watson, Amann Singh, Forster Saxon and Jack Klobchar
+
+
+The bot must be able to create tasks and assign them to users within a Discord channel.
+
+The bot must be able to track the progress of tasks and allow users to update the status of their tasks.
+
+The bot must be able to set deadlines for tasks and send reminders to users who have tasks approaching their deadline.
+
+The bot must allow users to add comments and updates to their tasks, so that other users can stay informed of progress.
+
+The bot must allow users to assign priorities to their tasks, so that they can prioritize their work.
+
+The bot must allow users to view the progress of all tasks within a Discord channel, so that they can see how close the team is to completing a project.
+
+The bot must allow users to archive completed tasks, so that they can easily refer back to them in the future.
+
+The bot must allow users to view the details of a task, so that they know exactly what needs to be done.
+
+The bot must allow users to assign tasks to other users within a Discord channel, so that the team leader can easily assign tasks and track progress.
+
+The bot must be able to handle multiple projects and tasks, so that users can easily switch between them and stay organized.
+
+The bot will reward the person who was assigned the task with some sort of congrats note in chat when they check off that their task is finished.
+
+Maybe need a system that checks off all users who have same task to be updated at same time when progress is made?
+
+
+Maybe assign discord users to a task rather then a task to a user. 
+
+
+
+Project Vision and Users
+
+You will choose a product or API with an active development team and engaged set of users. I have listed some in the appendix to this document.
+
+Identify your stated overall vision and scope for the improvements in a vision and scope document (text p81; 1 page-500 words). Define a simple context diagram (fig 5-6) showing the overall system context (e.g., external services/APIs used, authentication providers, etc.).
+
+
+Business Requirements
+1.1 Background
+Professor Neil Ernst requested our group to find a simple problem or project that our group could tackle in our limited time period. A list of possible projects to stimulate our minds was given, resulting in our idea to create a Discord bot. A common problem many people have is time and project management, especially in school. As we are students ourselves, we relate to these struggles and have come up with a possible solution. Discord is an application that many groups and communities use to communicate due to the fact that you can share, text, video chat, voice chat, and share things all in one application. Our group would design and code a Discord bot that will help users assign group members tasks, keep task progresses updated, and alert users of the due dates of tasks if assigned. 
+1.2 Business Rules
+If a task is finished then all users associated with the task will have it removed. 
+If the user inputs anything to the discord bot that something must always happen, even if that means a help option for commands comes up. 
+
+Scope and Limitations
+2.1 Major Features
+The Discord bot will allow users to add tasks to themselves and others that they can then see and interact with. (Note: Interaction = Started, Done, etc…). The Discord bot will have datetime function that says when the user was assigned the task and the choice to add a ‘due date’ that adds a specified time that the user should be done by. The bot will send the user an alert a day before the given due date. Once the task is finished, a congratulations message will be sent to the chat stating the task's completion.
+
+Business Context
+3.1 Stakeholder Profiles
+3.1.1 Professor Neil Ernst: 
+Will receive value through improved usability compared to current products.
+Requested this project to be completed. Will grade the project at the end. 
+How the user stories were collected and turned into requirements
+Expects extra work to be done when finding user stories and creating requirements and documents to further student learning. 
+3.1.2 Discord Users: 
+Will receive value through improved usability compared to current products. May gain the ability to perform entirely new tasks.
+Depending on if Discord user wants a better solution to project management, their attitude toward the project will change.
+Task management integrated into discord.
+Discord Users would want this Discord Bot to be easy to use/would expect UI/Bot usage to be similar to preexisting Discord Bots.
+	
+3.2 Deployment Considerations
+The following is from [1]
+How to integrate a pre-programmed Discord bot:
+Select a Discord bot from a website offering a Discord bot list (e.g. “top.gg”).
+Click on “Invite” on the bot website.
+Select your server and grant the bot the permissions it needs.
+The bot will then be added to your Discord server.
+How to make your own Discord bot/add a custom Discord Bot:
+Turn on “Developer mode” in your Discord account.
+Click on “Discord API”.
+In the Developer portal, click on “Applications”. Log in again and then, back in the “Applications” menu, click on “New Application”.
+Name the bot and then click “Create”.
+Go to the “Bot” menu and generate a token using “Add Bot”.
+Program your bot using the bot token and save the file. In the case of this project, the code will be completed for the users. Therefore, users only have to copy the code given to them and add it to the token.
+Define other details for your bot under “General Information”.
+Click on “OAuth2”, activate “bot”, set the permissions, and then click on “Copy”.
+Select your server to add your bot to it.
+
+[1]	“How to make a discord bot,” IONOS Digital Guide. [Online]. Available: https://www.ionos.com/digitalguide/server/know-how/creating-discord-bot/. [Accessed: 31-Jan-2023]. 
+
+
+Context diagram figure from textbook
+
+
+
+
+Requirements
+Requirements come from a variety of sources, including existing products, user feedback, crowd-sourced conversations, and interviews and surveys. Use some combination of these to derive a set of requirements for your product or additional features.
+Use NLP and crowd-sourcing tools that we examined to extract well known features from the crowd-RE data (e.g., Reddit threads). You must supplement this with at least one of the following:
+interviewing other users (such as your friends or existing users/devs).
+extracting requirements from older products or similar products.
+Your goal is to produce a set of at least 10 user stories. You will write user stories (on GitHub, using issues) through an iterative process. Your submission should include a draft version, with some high level ideas; a refined version 2, where you identify 10 user stories; and the final version, 3, which has been validated with existing users. A lot of the marks in this assignment are based on where the requirements came from and how well you justify their importance. Merely saying your team thinks they are useful is not sufficient.
+
+
+Potential Requirements
+Functionality:
+The bot must be able to accept commands from users to assign tasks to themselves.
+The bot must be able to display a list of assigned tasks to a user upon request.
+The bot must be able to mark a task as completed when a user indicates it is done.
+The bot must store assigned tasks and task completion information for each user.
+The bot must have the ability to delete a task if a user wants to remove it.
+The bot should allow users to edit the task.
+The bot should allow users to set due date for tasks.
+The bot should be able to send reminders to users about tasks that are due soon.
+The bot should have the ability to share tasks with other users in the discord server.
+The bot should have a search functionality, allowing users to easily find specific tasks.
+The bot should be able to handle multiple tasks assigned to the same user.
+The bot should be able to handle multiple users assigned to the same task.
+Quality Assurance:
+No matter what, the bot must always respond if the user has imputed something. If the user has inputed a non-existint commands then a ‘help’ response will be presented to the user describing actual commands. 
+Users and human factors:
+The bot should use similar command prompts to preexisting Discord Bots.
+
+
+Resources:
+
+Reqs
+The bot must be able to accept commands from users to assign tasks to themselves.
+The bot must be able to display a list of assigned tasks to a user upon request.
+The bot must be able to mark a task as completed when a user indicates it is done.
+The bot must store assigned tasks and task completion information for each user.
+The bot must have the ability to delete a task if a user wants to remove it.
+The bot should allow users to edit the task.
+The bot should allow users to set due date for tasks.
+The bot should be able to send reminders to users about tasks that are due soon.
+The bot should have the ability to share tasks with other users in the discord server.
+The bot should have a search functionality, allowing users to easily find specific tasks.
+The bot should be able to handle multiple tasks assigned to the same user.
+The bot should be able to generate task progress reports for users to view. (maybe)
+
+Requirements with rationale 
+Task Assignment: The bot should allow users to assign tasks to themselves or other members of the group. This requirement is necessary because the main purpose of the bot is to manage tasks and help users keep track of their tasks and their progress.
+Task Assignment: The bot should be able to handle multiple tasks assigned to the same user. This requirement is important as without it, the user would only have limited use for the bot as they could only use it to help them with managing one task rather than many. 
+Due Date Functionality: The bot should allow users to set due dates for their tasks and send alerts to the users a day before the due date. This requirement is necessary because it helps users stay on top of their tasks and deadlines and ensures that tasks are completed on time.
+Date and Time Functionality: The bot should have a datetime function that keeps track of when tasks were assigned and allows users to see the date and time when tasks were assigned.
+Task Management Dashboard: The bot should have a dashboard or interface that allows users to see all their tasks and their status, as well as the tasks assigned to others.
+Task Progress Update: The bot should allow users to update the progress of their tasks and mark them as started, done, etc. This requirement is necessary because it helps the users keep track of their tasks and their progress, and also helps other members see the status of the tasks.
+User Interaction: The bot should alert the user when they are using incorrect commands by giving them a “help box” that suggests all viable commands the user can input to the bot. This requirement is necessary because it helps users understand how to use the discord bot and what it can do. 
+User Interaction: The bot should allow users to interact with the tasks and see their progress, as well as the progress of other members. This requirement is necessary because it helps users stay informed and stay on top of their tasks and deadlines.
+Task Completion Message: The bot should send a message to the chat once a task is completed, congratulating the users and removing all members attached to the task. This requirement is necessary because it provides a clear indication of task completion and helps users keep track of their progress.
+Task Deletion: The bot should allow users to remove themselves from tasks they were or are assigned to. This requirement is important as it allows users to remove people from tasks they don't need to be a part of anymore or remove them if they were added by mistake. 
+Group Integration: The bot should be integrated with Discord groups, allowing users to use the bot within their Discord groups and communities. (Not quite sure what discord groups are)
+These requirements are essential for the success of the Discord bot and will ensure that the bot meets its primary objectives of task management and organization within groups and communities.
+
+
+Project Overview
+This should provide a brief description of the project, why it is needed and the overall goals of the software.
+
+Professor Neil Ernst requested our group to find a simple problem or project that our group could tackle in our limited time period. A list of possible projects to stimulate our minds was given, resulting in our idea to create a Discord bot. A common problem many people have is time and project management, especially in school. As we are students ourselves, we relate to these struggles and have come up with a possible solution. Discord is an application that many groups and communities use to communicate due to the fact that you can share, text, video chat, voice chat, and share things all in one application. Our group would design and code a Discord bot that will help users assign group members tasks, keep task progresses updated, and alert users of the due dates of tasks if assigned.
+
+The Discord bot will allow anyone to add tasks to themselves and others that they can then see and interact with. (Note: Interaction = Started, Done, etc…). The Discord bot will have datetime function that says when the user was assigned the task and the choice to add a ‘due date’ that adds a specified time that the user should be done by. The bot will send the user an alert a day before the given due date. Once the task is finished, a congratulations message will be sent to the chat stating the task’s completion and removing all members attached to the task from it.
+
+
+Story Map
+This should be well laid out and easy to understand. Stories should be grouped into logical high-level activities and the activities should be displayed in chronological order. Highest priority stories should be at the top.
+
+Potential Stories from Reddit:
+Bot with a time tracking role : r/Discord_Bots 
+Automatic change rol after specific command : r/Discord_Bots 
+Looking for bot to allow members to reward helpful members with points : r/Discord_Bots 
+A simple chat bot with random parameters : r/Discord_Bots 
+Auto delete messages bot : r/Discord_Bots 
+LF Discord bot that auto splits teams based on custom roles
+Suggestions for Task management software?
+Task Management & Issue Tracking System which can be integrated with Discord
+Recommendations for squad/team management in Discord
+discord for task management
+
+KanBan Bot: https://github.com/seansylee/kanban-board-bot
+Shows how we could implement our tasks and their priorities…
+https://www.nngroup.com/articles/user-story-mapping/
+In Class Example for 3 steps to user stories:
+Post Messages
+As a user I want to post images, pics, text on the app pages. “So that my friends are able to send texts and see my pics.”
+Given the user is logged in and the user has text, pics and images +... when the user posts these images then all friends in the list should also be able to see the images. 
+
+
+
+
+
+Draft Version User Stories (High level ideas)
+No.
+High Level Idea
+1
+Create tasks
+2
+Tasks should have due dates
+3
+Notify group members when approaching due dates
+4
+Users should be able to be assigned to tasks
+5
+
+
+6
+The progress of a task can be set and modified with a status or tag
+7
+Tasks can be filtered by specific fields
+8
+A Kanban board or other type of task view should be able to be generated
+9
+Have ability to split users into separate groups to work on a task  (could maybe remove this one)
+10
+
+
+
+
+
+
+Refined Version User Stories (10 actual user stories)
+No.
+User Story
+1
+As a student, I would like to be able to track my real life tasks
+2
+As a user, I want to be able to set due dates for my assignments
+3
+As a group member, I would like to be reminded when my tasks are approaching their due dates
+4
+As a user, I want the ability to assign or get assigned to a task, so I can receive updates
+5
+
+
+6
+As a group member, I want to be able to monitor and change the status of the task, to track the progress and timeline of the task
+7
+As a group member, I want to be able to filter my tasks by specific criteria such as due date or assigned members
+8
+As a group member, I want to be able to view my tasks in a type of table view, such as a Kanban board
+9
+As a team leader, I would like to be able to split my group into sub teams based on tasks assigned to each group member  (could maybe remove this one)
+10
+
+
+
+
+
+
+Context, Vision and Users
+2-3 pages showing the project feature context, vision, and stakeholder maps.
+
+
+
+Appendices
+Preparation
+An appendix that includes all of the techniques your team used to find requirements. If you did interviews with friends or acquaintances, include the initial set of prepared interview questions , uploaded to the Brightspace assignment on the due date listed.
+Elicitation evidence
+All meetings, online repositories, and other forms of elicitation should be listed (with the date, who participated, and any other relevant details).
+https://github.com/uvic-seng321/project-bot8 All documents and project progress is kept track of on the above website. 
+Jan 24 Lab: ALL
+Jan 25 Lab: ALL
+Jan 31 Lab: ALL
+Feb 1 Aidan on own time. Worked on Requirements
+Feb 1 Lab ALL except Amann
+
